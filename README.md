@@ -21,3 +21,11 @@ LSTM内部结构的三个门：
 门控循环单元（Gated Recurrent Unit，GRU）是循环神经网络的一种，和LSTM一样，都是为了解决长期记忆和反向传播中的梯度等问题而设计出来的。相比LSTM，GRU的结构更加简单，比LSTM少了一个门，只有重置门和更新门，因此计算效率更高，同时占用的内存也相对较少。在实际使用中，LSTM和GRU的差异不大，一般最后的准确率等指标都近似，但相对来说，GRU达到收敛状态时所需的迭代次数少，训练速度快。
 
 详细描述：https://blog.csdn.net/weixin_44766179/article/details/90512700
+
+接下来用双向LSTM实现IMDB分类，分类准确率为99.84%。
+
+数据来源：https://www.kaggle.com/c/digit-recognizer/data
+
+数据下载地址：https://pan.baidu.com/s/1EYoqAcW238saKy3uQCfC3w
+
+提取码：ilze
