@@ -88,9 +88,11 @@ test_texts = preprocess(test_texts)
 
 max_features = 6000
 texts = train_texts + test_texts
+
 # 分词器
 tok = Tokenizer(num_words=max_features)
 tok.fit_on_texts(texts)
+
 # 文本变成序列
 list_tok = tok.texts_to_sequences(texts)
 
@@ -100,8 +102,10 @@ seq_tok = pad_sequences(list_tok, maxlen=maxlen)
 
 # 训练集
 x_train = seq_tok[:len(train_texts)]
+
 # 训练集标签
 y_train = train_labels
+
 # 测试集
 x_test = seq_tok[len(train_texts):]
 
