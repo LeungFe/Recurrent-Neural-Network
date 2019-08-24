@@ -11,7 +11,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
-from keras.layers import Dense, LSTM, Embedding, Dropout, Conv1D, MaxPooling1D, Bidirectional
+from keras.layers import Dense, LSTM, Embedding, Dropout, Bidirectional
 from keras.models import Sequential
 
 
